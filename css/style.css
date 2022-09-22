@@ -1,0 +1,125 @@
+/* ===========================*/
+/* variables */
+/* ===========================*/
+
+:root {
+	--color-primary: #ee581c;
+	--color-black: #000;
+	--color-white: #fff;
+	--font-primary: 'Impact', sans-serif;
+	--font-secondary: 'Dubai', sans-serif;
+}
+
+/* ===========================*/
+/* base*/
+/* ===========================*/
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+	outline: none;
+	text-transform: uppercase;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	font-size: 1.6rem;
+	color: var(--color-white);
+	background-color: var(--color-black);
+	overflow-x: hidden;
+	font-family: var(--font-primary);
+	height: 100vh;
+}
+
+.main {
+	height: 100vh;
+	/* padding-top: 3.3rem; */
+	position: relative;
+}
+
+.page {
+	height: 100vh;
+	width: 100%;
+	background-color: var(--color-black);
+}
+
+/* side nav */
+.dots-nav {
+	position: fixed;
+	top: 50%;
+	right: 2.5rem;
+	transform: translateY(-50%);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+.dots-nav .btn-dot {
+	height: 1.5rem;
+	width: 1.5rem;
+	background-color: var(--color-white);
+	border: 1px solid #707070;
+	outline: none;
+	border-radius: 50%;
+	transition: all 0.3s;
+}
+
+.dots-nav .btn-dot:hover,
+.dots-nav .active {
+	background-color: var(--color-primary);
+}
+
+.content-wrapper {
+	width: 100%;
+	/* position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+}
+
+.home .btn {
+	font-size: 1.6rem;
+	font-family: var(--font-secondary);
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.home .btn .icon {
+	fill: var(--color-white);
+}
+
+.nav {
+	padding-top: 3.5rem;
+}
+.nav-list {
+	gap: 1.4rem;
+}
+.nav-link {
+	color: var(--color-white) !important;
+	font-size: 1.6rem;
+	border-bottom: 3px solid var(--color-white);
+	transition: all 0.3s;
+}
+
+.active,
+.nav-link:hover {
+	border-bottom: 3px solid var(--color-primary);
+	color: var(--color-white) !important;
+}
+
+.home .home-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
