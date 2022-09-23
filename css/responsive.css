@@ -10,6 +10,37 @@
 	html {
 		font-size: 52%;
 	}
+
+	.nav {
+		padding-right: 2rem;
+		width: 100%;
+	}
+
+	.service-img,
+	.marketing .service-img {
+		position: relative;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.service-content {
+		padding: 0 0 8rem 0;
+	}
+
+	.service-section,
+	.marketing-section,
+	.strategy-section,
+	.technology-section,
+	.corporate-section {
+		padding: 0rem 0;
+	}
+
+	.marketing-section,
+	.strategy-section,
+	.technology-section,
+	.corporate-section {
+		/* padding: 30rem 0; */
+	}
 }
 
 /* max width 768px */
@@ -19,7 +50,7 @@
 /* max width 575px */
 @media only screen and (max-width: 35.9375em) {
 	.container {
-		padding: 0 2rem;
+		padding: 0 5rem;
 	}
 
 	html {
@@ -30,10 +61,22 @@
 		height: 1rem;
 		width: 1rem;
 	}
+
+	.dots-nav {
+		right: 1.5rem;
+	}
 }
 
 /* max width 480px */
 @media only screen and (max-width: 30em) {
+	.cotact-item {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+	.cotact-item input {
+		text-align: start;
+	}
 }
 
 /* max width 380px */

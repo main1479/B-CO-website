@@ -18,82 +18,437 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/responsive.css" />
 	</head>
-	<body class="home">
+	<body>
 		<main class="main">
-			<div class="container">
-				<div class="page row d-none d-lg-flex" id="home">
-					<div class="col-lg-6">
-						<div
-							class="content-wrapper d-flex justify-content-center align-items-start flex-column h-100"
-						>
-							<h3 class="heading mb-2">YOU ARE NOT ALONE...</h3>
-							<h1 class="heading mb-3">WE SOLVE TECHNICAL & BUSINESS CHALLENGES</h1>
-							<button class="btn btn-show-reel d-flex align-items-center">
-								<svg class="icon mr-2">
-									<use xlink:href="img/icons.svg#icon-play_circle_filled"></use>
-								</svg>
-								<span class="text"> show reel </span>
+			<!-- navbar start -->
+			<nav class="nav">
+				<ul class="nav-list d-flex justify-content-start align-items-center">
+					<li class="nav-item">
+						<a href="#" class="nav-link active">home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">about us</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">service</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">contact</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- navbar end -->
+
+			<!-- header start -->
+			<header class="header">
+				<div class="container h-100">
+					<div class="row h-100 justify-content-center align-items-center" id="home">
+						<div class="col-12 col-lg-6">
+							<div class="content-wrapper h-100">
+								<h3 class="heading mb-2">YOU ARE NOT ALONE...</h3>
+								<h1 class="heading mb-3">WE SOLVE TECHNICAL & BUSINESS CHALLENGES</h1>
+								<button class="btn btn-show-reel d-flex align-items-center">
+									<svg class="icon mr-2">
+										<use xlink:href="img/icons.svg#icon-play_circle_filled"></use>
+									</svg>
+									<span class="text"> show reel </span>
+								</button>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6">
+							<div class="content-wrapper position-relative h-100">
+								<figure class="home-img">
+									<img src="img/home-img.png" alt="WE SOLVE TECHNICAL & BUSINESS CHALLENGES" />
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- header end -->
+
+			<!-- about start -->
+			<section class="about-section">
+				<div class="container">
+					<!-- about content for big devices -->
+					<div class="row justify-content-center align-items-center d-none d-lg-flex" id="about">
+						<div class="col-12 col-lg-6">
+							<div class="content-wrapper">
+								<figure class="about-img">
+									<img src="img/about-img.png" alt="WE SOLVE TECHNICAL & BUSINESS CHALLENGES" />
+								</figure>
+							</div>
+						</div>
+
+						<div class="col-12 col-lg-6">
+							<div class="content-wrapper text-end">
+								<h3 class="heading mb-2">WHO WE ARE</h3>
+								<h2 class="heading mb-3">
+									WE CREATE WORLD CLASS DIGITAL SOLUTION COMMUNINCATION AND BRANDS
+								</h2>
+								<p class="text mb-5">
+									AS A DIGITAL AGENCY, WE WORK CLOSELY WITH OUR CLIENTS TO DEFINE, DESIGN, AND
+									DEVELOP TRANSFORMATIVE SOLUTION ACROSS ALL PLATFORMS AND BRAND'S TOUCH POINT.
+								</p>
+
+								<div class="count row justify-content-end">
+									<div class="col-4 text-center">
+										<div class="count-number pb-2">3</div>
+										<div class="count-title">office</div>
+									</div>
+									<div class="col-4 text-center">
+										<div class="count-number pb-2">10+</div>
+										<div class="count-title">years</div>
+									</div>
+									<div class="col-4 text-center">
+										<div class="count-number pb-2">99+</div>
+										<div class="count-title">SOLUTIONS</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- about content for small devices -->
+					<div class="row justify-content-center align-items-center d-flex d-lg-none" id="about">
+						<div class="col-12 col-lg-6 mb-5">
+							<div class="content-wrapper text-end">
+								<h3 class="heading mb-2">WHO WE ARE</h3>
+								<h2 class="heading mb-3">
+									WE CREATE WORLD CLASS DIGITAL SOLUTION COMMUNINCATION AND BRANDS
+								</h2>
+								<p class="text mb-5">
+									AS A DIGITAL AGENCY, WE WORK CLOSELY WITH OUR CLIENTS TO DEFINE, DESIGN, AND
+									DEVELOP TRANSFORMATIVE SOLUTION ACROSS ALL PLATFORMS AND BRAND'S TOUCH POINT.
+								</p>
+
+								<div class="count row justify-content-end">
+									<div class="col-4 text-center">
+										<div class="count-number pb-2">3</div>
+										<div class="count-title">office</div>
+									</div>
+									<div class="col-4 text-center">
+										<div class="count-number pb-2">10+</div>
+										<div class="count-title">years</div>
+									</div>
+									<div class="col-4 text-center">
+										<div class="count-number pb-2">99+</div>
+										<div class="count-title">SOLUTIONS</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12 col-lg-6">
+							<div class="content-wrapper">
+								<figure class="home-img">
+									<img src="img/about-img.png" alt="WE SOLVE TECHNICAL & BUSINESS CHALLENGES" />
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- about end -->
+
+			<!-- service start -->
+			<section class="service-section position-relative">
+				<div class="container">
+					<div class="service row">
+						<div class="service-content col-12 col-lg-6">
+							<h3 class="heading mb-1">THIS IS HOW WE DO</h3>
+							<h2 class="heading mb-2">WE WORK WITH TECHNOLOGY AESTHETICS</h2>
+							<p class="text mb-3">
+								WANNA REACH SUSTAINABLE RESULTS WE WILL COMBINE DATA, TECHNOLOGY AND INSIGHTS TO
+								BRING TO BUILD YOUR SERVICES AND TRANSFORM YOUR BUSINESS
+							</p>
+
+							<h5 class="heading mb-2">Our areas of expertise:</h5>
+							<div class="service-list">
+								<a href="#" class="service-item d-flex justify-content-between align-items-center">
+									<h3 class="heading">DIGITAL MARKETING</h3>
+									<svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg>
+								</a>
+								<a href="#" class="service-item d-flex justify-content-between align-items-center">
+									<h3 class="heading">CORPORATE TRAININGS</h3>
+									<svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg>
+								</a>
+								<a href="#" class="service-item d-flex justify-content-between align-items-center">
+									<h3 class="heading">STRATEGY</h3>
+									<svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg>
+								</a>
+								<a href="#" class="service-item d-flex justify-content-between align-items-center">
+									<h3 class="heading">TECHNOLOGY SERVICES</h3>
+									<svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg>
+								</a>
+							</div>
+						</div>
+						<div class="service-img col-12 col-lg-6">
+							<img src="img/service-img.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- service end -->
+
+			<!-- digital marketing start -->
+			<section class="marketing-section position-relative">
+				<div class="container">
+					<!-- marketing for big devices -->
+					<div class="marketing d-none d-lg-block">
+						<div class="row justify-content-end align-items-center">
+							<div class="col-12 col-lg-6 service-img">
+								<img src="img/marketing-img.png" alt="" />
+							</div>
+							<div class="col-12 col-lg-6 text-end marketing-content">
+								<h2 class="heading mb-2">DIGITAL MARKETING</h2>
+								<p class="text mb-5">
+									Our goal is to establish your brand as unique as possible. You can perceive your
+									business in fresh ways with our guidance.
+									<br /><br />
+									Tell a more compelling brand story by concentrating on your strengths and
+									differentiators. The magic happens somewhere between the appropriate messaging,
+									the appropriate images, and the appropriate Metaverse. Every single time, our
+									creative team will work with you to create that magic.
+								</p>
+								<button class="btn btn-marketing">read more</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- marketing for small devices -->
+					<div class="marketing d-block d-lg-none">
+						<div class="row justify-content-end align-items-center">
+							<div class="col-12 col-lg-6 text-end marketing-content">
+								<h2 class="heading mb-2">DIGITAL MARKETING</h2>
+								<p class="text mb-5">
+									Our goal is to establish your brand as unique as possible. You can perceive your
+									business in fresh ways with our guidance.
+									<br /><br />
+									Tell a more compelling brand story by concentrating on your strengths and
+									differentiators. The magic happens somewhere between the appropriate messaging,
+									the appropriate images, and the appropriate Metaverse. Every single time, our
+									creative team will work with you to create that magic.
+								</p>
+								<button class="btn btn-marketing">read more</button>
+							</div>
+
+							<div class="col-12 col-lg-6 service-img">
+								<img src="img/marketing-img.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="popup"></div> -->
+			</section>
+			<!-- digital marketing end -->
+
+			<!-- coporate training start -->
+			<section class="corporate-section position-relative">
+				<div class="container">
+					<!-- marketing for big devices -->
+					<div class="marketing d-none d-lg-block">
+						<div class="row justify-content-end align-items-center">
+							<div class="col-12 col-lg-6 service-img">
+								<img src="img/training-img.png" alt="" />
+							</div>
+							<div class="col-12 col-lg-6 text-end marketing-content">
+								<h2 class="heading mb-2">CORPORATE TRAININGS</h2>
+								<p class="text mb-5">
+									Our digital activation initiatives combine content, engagement, analytics, and
+									refining in the ideal way. We ensure that we are pivoting and optimizing to match
+									your growing goals by using insights, performance, and data. We'll boost your
+									market share and attract more clients to your brand together.
+								</p>
+								<button class="btn btn-marketing">read more</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- CORPORATE for small devices -->
+					<div class="marketing d-block d-lg-none">
+						<div class="row justify-content-end align-items-center">
+							<div class="col-12 col-lg-6 text-end marketing-content">
+								<h2 class="heading mb-2">CORPORATE TRAININGS</h2>
+								<p class="text mb-5">
+									Our digital activation initiatives combine content, engagement, analytics, and
+									refining in the ideal way. We ensure that we are pivoting and optimizing to match
+									your growing goals by using insights, performance, and data. We'll boost your
+									market share and attract more clients to your brand together.
+								</p>
+								<button class="btn btn-marketing">read more</button>
+							</div>
+
+							<div class="col-12 col-lg-6 service-img">
+								<img src="img/training-img.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- coporate training end -->
+
+			<!-- strategy start -->
+			<section class="strategy-section position-relative">
+				<div class="container">
+					<!-- marketing for big devices -->
+					<div class="marketing d-none d-lg-block">
+						<div class="row justify-content-end align-items-center">
+							<div class="col-12 col-lg-6 service-img">
+								<img src="img/strategy-img.png" alt="" />
+							</div>
+							<div class="col-12 col-lg-6 text-end marketing-content">
+								<h2 class="heading mb-2">STRATEGY</h2>
+								<p class="text mb-5">
+									We conduct the in-depth investigation required to develop a powerful digital
+									strategy for your brand, from customer interviews to data analysis. After that, we
+									employ exact analytics tracking to verify and improve our work. The information
+									gathered shapes our strategy, identifies turning moments, and provides you with
+									the comprehensive picture you need to make wise marketing choices.
+								</p>
+								<button class="btn btn-marketing">read more</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- CORPORATE for small devices -->
+					<div class="marketing d-block d-lg-none">
+						<div class="row justify-content-end align-items-center">
+							<div class="col-12 col-lg-6 text-end marketing-content">
+								<h2 class="heading mb-2">STRATEGY</h2>
+								<p class="text mb-5">
+									We conduct the in-depth investigation required to develop a powerful digital
+									strategy for your brand, from customer interviews to data analysis. After that, we
+									employ exact analytics tracking to verify and improve our work. The information
+									gathered shapes our strategy, identifies turning moments, and provides you with
+									the comprehensive picture you need to make wise marketing choices.
+								</p>
+								<button class="btn btn-marketing">read more</button>
+							</div>
+
+							<div class="col-12 col-lg-6 service-img">
+								<img src="img/strategy-img.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- strategy end -->
+
+			<!-- technology start -->
+			<section class="technology-section position-relative">
+				<div class="container">
+					<!-- marketing for big devices -->
+					<div class="marketing d-none d-lg-block">
+						<div class="row justify-content-end align-items-center">
+							<div class="col-12 col-lg-6 service-img">
+								<img src="img/technology-img.png" alt="" />
+							</div>
+							<div class="col-12 col-lg-6 text-end marketing-content">
+								<h2 class="heading mb-2">TECHNOLOGY SERVICES</h2>
+								<p class="text mb-5">
+									We take a proactive approach to developing and expanding the marketing
+									technologies and platforms that enable business in the modern world. Without a
+									doubt, the influence of technology on societal expectations and corporate strategy
+									is expanding, as are employee and customer expectations for what technological
+									services can offer.
+								</p>
+								<button class="btn btn-marketing">read more</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- CORPORATE for small devices -->
+					<div class="marketing d-block d-lg-none">
+						<div class="row justify-content-end align-items-center">
+							<div class="col-12 col-lg-6 text-end marketing-content">
+								<h2 class="heading mb-2">TECHNOLOGY SERVICES</h2>
+								<p class="text mb-5">
+									We take a proactive approach to developing and expanding the marketing
+									technologies and platforms that enable business in the modern world. Without a
+									doubt, the influence of technology on societal expectations and corporate strategy
+									is expanding, as are employee and customer expectations for what technological
+									services can offer.
+								</p>
+								<button class="btn btn-marketing">read more</button>
+							</div>
+
+							<div class="col-12 col-lg-6 service-img">
+								<img src="img/technology-img.png" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- technology end -->
+
+			<!-- contact start -->
+			<section class="contact-section">
+				<div class="container">
+					<div class="contact">
+						<div class="contact-header mb-2">hedare</div>
+						<h3 class="heading mb-1 center">reach us</h3>
+						<h2 class="heading mb-4 center">LET'S HAVE A TALK AND SEE WHAT WE CAN DO FOR YOU</h2>
+
+						<form action="#" class="contact-form">
+							<div class="row g-5 mb-5">
+								<div class="col-12 col-lg-6">
+									<div class="cotact-item">
+										<label for="name">HEY, MY NAME IS</label>
+										<input type="text" class="input" id="name" placeholder="type here" />
+									</div>
+								</div>
+								<div class="col-12 col-lg-6">
+									<div class="cotact-item">
+										<label for="name">HEY, MY NAME IS</label>
+										<div class="select d-none">
+											<select name="format" id="format">
+												<option value="select dropdown" selected>select dropdown</option>
+												<option value="dropdown 1">dropdown 1</option>
+												<option value="dropdown 2">dropdown 2</option>
+												<option value="dropdown 3">dropdown 3</option>
+												<option value="dropdown 4">dropdown 4</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-6">
+									<div class="cotact-item">
+										<label for="email">GET IN TOUCH WITH ME AT</label>
+										<input type="text" placeholder="you email" class="input" id="email" />
+									</div>
+								</div>
+							</div>
+
+							<div class="form-checkbox d-flex align-items-center justify-content-start">
+								<input
+									class="form-check-input mr-1"
+									type="checkbox"
+									value=""
+									id="flexCheckDefault"
+								/>
+								<label class="form-check-label" for="flexCheckDefault"
+									>I HERE BY ACCEPT ALL TERMS AND CONDITIONS</label
+								>
+							</div>
+
+							<button
+								type="submit"
+								class="btn-submit d-flex justify-content-between align-items-center"
+							>
+								<span class="text">SEND ENQUIRY</span>
+								<svg class="icon icon-play"><use xlink:href="#icon-play"></use></svg>
 							</button>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="content-wrapper position-relative h-100">
-							<nav class="nav">
-								<ul class="nav-list d-flex justify-content-start align-items-center">
-									<li class="nav-item">
-										<a href="#" class="nav-link active">home</a>
-									</li>
-									<li class="nav-item">
-										<a href="#" class="nav-link">about us</a>
-									</li>
-									<li class="nav-item">
-										<a href="#" class="nav-link">service</a>
-									</li>
-									<li class="nav-item">
-										<a href="#" class="nav-link">contact</a>
-									</li>
-								</ul>
-							</nav>
-
-							<figure class="home-img">
-								<img src="img/home-img.png" alt="WE SOLVE TECHNICAL & BUSINESS CHALLENGES" />
-							</figure>
-						</div>
+						</form>
 					</div>
 				</div>
-				<div class="page d-lg-none">
-					<nav class="nav d-flex justify-content-end">
-						<ul class="nav-list d-flex justify-content-start align-items-center">
-							<li class="nav-item">
-								<a href="#" class="nav-link active">home</a>
-							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link">about us</a>
-							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link">service</a>
-							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link">contact</a>
-							</li>
-						</ul>
-					</nav>
+			</section>
+			<!-- contact end -->
 
-					<div
-						class="content-wrapper d-flex justify-content-center align-items-start flex-column h-100"
-					>
-						<h3 class="heading mb-2">YOU ARE NOT ALONE...</h3>
-						<h1 class="heading mb-3">WE SOLVE TECHNICAL & BUSINESS CHALLENGES</h1>
-						<button class="btn btn-show-reel d-flex align-items-center">
-							<svg class="icon mr-2">
-								<use xlink:href="img/icons.svg#icon-play_circle_filled"></use>
-							</svg>
-							<span class="text"> show reel </span>
-						</button>
-					</div>
-				</div>
-			</div>
-
+			<!-- side nav satrt -->
 			<div class="dots-nav">
 				<button class="btn-dot active" id="home"></button>
 				<button class="btn-dot" id="home"></button>
@@ -104,6 +459,7 @@
 				<button class="btn-dot" id="home"></button>
 				<button class="btn-dot" id="home"></button>
 			</div>
+			<!-- side nav end -->
 		</main>
 
 		<!-- JavaScript Bundle with Popper -->
