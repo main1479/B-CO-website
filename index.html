@@ -24,16 +24,16 @@
 			<nav class="nav">
 				<ul class="nav-list d-flex justify-content-start align-items-center">
 					<li class="nav-item">
-						<a href="#" class="nav-link active">home</a>
+						<a href="#header" class="nav-link active">home</a>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link">about us</a>
+						<a href="#about" class="nav-link">about us</a>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link">service</a>
+						<a href="#service" class="nav-link">service</a>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link">contact</a>
+						<a href="#contact" class="nav-link">contact</a>
 					</li>
 				</ul>
 			</nav>
@@ -41,7 +41,7 @@
 			<!-- navbar end -->
 
 			<!-- header start -->
-			<header class="header">
+			<header class="header" id="header">
 				<div class="container h-100">
 					<div class="row h-100 justify-content-center align-items-center" id="home">
 						<div class="col-12 col-lg-6">
@@ -70,7 +70,7 @@
 			<!-- header end -->
 
 			<!-- about start -->
-			<section class="about-section">
+			<section class="about-section" id="about">
 				<div class="container">
 					<!-- about content for big devices -->
 					<div class="row justify-content-center align-items-center d-none d-lg-flex" id="about">
@@ -154,7 +154,7 @@
 			<!-- about end -->
 
 			<!-- service start -->
-			<section class="service-section position-relative">
+			<section class="service-section position-relative" id="service">
 				<div class="container">
 					<div class="service row">
 						<div class="service-content col-12 col-lg-6">
@@ -194,7 +194,7 @@
 			<!-- service end -->
 
 			<!-- digital marketing start -->
-			<section class="marketing-section position-relative">
+			<section class="marketing-section position-relative" id="marketing">
 				<div class="container">
 					<!-- marketing for big devices -->
 					<div class="marketing d-none d-lg-block">
@@ -247,7 +247,7 @@
 			<!-- digital marketing end -->
 
 			<!-- coporate training start -->
-			<section class="corporate-section position-relative">
+			<section class="corporate-section position-relative" id="training">
 				<div class="container">
 					<!-- marketing for big devices -->
 					<div class="marketing d-none d-lg-block">
@@ -292,7 +292,7 @@
 			<!-- coporate training end -->
 
 			<!-- strategy start -->
-			<section class="strategy-section position-relative">
+			<section class="strategy-section position-relative" id="strategy">
 				<div class="container">
 					<!-- marketing for big devices -->
 					<div class="marketing d-none d-lg-block">
@@ -339,7 +339,7 @@
 			<!-- strategy end -->
 
 			<!-- technology start -->
-			<section class="technology-section position-relative">
+			<section class="technology-section position-relative" id="tecnology">
 				<div class="container">
 					<!-- marketing for big devices -->
 					<div class="marketing d-none d-lg-block">
@@ -386,10 +386,22 @@
 			<!-- technology end -->
 
 			<!-- contact start -->
-			<section class="contact-section">
+			<section class="contact-section" id="contact">
 				<div class="container">
 					<div class="contact">
-						<div class="contact-header mb-2">hedare</div>
+						<div class="contact-header mb-2 d-flex align-items-center justify-content-end">
+							<a href="#" class="btn-follow">follow us</a>
+							<div class="line"></div>
+							<a href="#">
+								<svg class="icon"><use xlink:href="img/icons.svg#icon-youtube-play"></use></svg>
+							</a>
+							<a href="#">
+								<svg class="icon"><use xlink:href="img/icons.svg#icon-linkedin"></use></svg>
+							</a>
+							<a href="#">
+								<svg class="icon"><use xlink:href="img/icons.svg#icon-instagram"></use></svg>
+							</a>
+						</div>
 						<h3 class="heading mb-1 center">reach us</h3>
 						<h2 class="heading mb-4 center">LET'S HAVE A TALK AND SEE WHAT WE CAN DO FOR YOU</h2>
 
@@ -423,7 +435,7 @@
 								</div>
 							</div>
 
-							<div class="form-checkbox d-flex align-items-center justify-content-start">
+							<div class="form-checkbox d-flex align-items-center justify-content-start mb-5">
 								<input
 									class="form-check-input mr-1"
 									type="checkbox"
@@ -439,8 +451,8 @@
 								type="submit"
 								class="btn-submit d-flex justify-content-between align-items-center"
 							>
-								<span class="text">SEND ENQUIRY</span>
-								<svg class="icon icon-play"><use xlink:href="#icon-play"></use></svg>
+								<span class="text mr-3">SEND ENQUIRY</span>
+								<svg class="icon icon-play"><use xlink:href="img/icons.svg#icon-play"></use></svg>
 							</button>
 						</form>
 					</div>
@@ -448,16 +460,40 @@
 			</section>
 			<!-- contact end -->
 
+			<!-- footer start -->
+			<footer class="footer d-flex justify-content-between align-items-center">
+				<div class="footer-left d-flex align-items-center">
+					<div class="email text">
+						EMAIL: <a href="mailto:info@botanandco.net" class="ml-1">info@botanandco.net</a>
+					</div>
+					|
+					<div class="phone text">
+						PHONE: <a href="tel:+46 72-156 21 57" class="ml-1">+46 72-156 21 57</a>
+					</div>
+					|
+					<div class="loaction text">LOCATION . STOCKHOL - COPENHAGEN- HELSINKI</div>
+				</div>
+
+				<div class="footer-right d-flex align-items-center">
+					<div class="copyright text">COPYRIGHT &copy; 2022 |</div>
+					|
+					<a href="#" class="text">PRIVACY POLICY</a>
+					|
+					<a href="#" class="text">TERMS OF USE</a>
+				</div>
+			</footer>
+			<!-- footer end -->
+
 			<!-- side nav satrt -->
 			<div class="dots-nav">
-				<button class="btn-dot active" id="home"></button>
-				<button class="btn-dot" id="home"></button>
-				<button class="btn-dot" id="home"></button>
-				<button class="btn-dot" id="home"></button>
-				<button class="btn-dot" id="home"></button>
-				<button class="btn-dot" id="home"></button>
-				<button class="btn-dot" id="home"></button>
-				<button class="btn-dot" id="home"></button>
+				<a href="#header" class="btn-dot active" id="home"></a>
+				<a href="#about" class="btn-dot" id="home"></a>
+				<a href="#service" class="btn-dot" id="home"></a>
+				<a href="#marketing" class="btn-dot" id="home"></a>
+				<a href="#training" class="btn-dot" id="home"></a>
+				<a href="#strategy" class="btn-dot" id="home"></a>
+				<a href="#tecnology" class="btn-dot" id="home"></a>
+				<a href="#contact" class="btn-dot" id="home"></a>
 			</div>
 			<!-- side nav end -->
 		</main>
