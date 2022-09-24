@@ -200,13 +200,15 @@ body::-webkit-scrollbar {
 	fill: var(--color-white);
 }
 
+.service-img-hero {
+}
+.service-img-hero img {
+}
+
 .service-img {
-	height: 100%;
-	width: 50%;
 	position: absolute;
-	bottom: 0;
-	right: 0;
-	/* max-width: 65rem; */
+	left: 0;
+	height: 100%;
 }
 .service-img img {
 	height: 100%;
@@ -223,7 +225,8 @@ body::-webkit-scrollbar {
 .strategy-section,
 .technology-section,
 .corporate-section {
-	padding: 30rem 0;
+	padding: 15rem 0;
+	margin: 10rem 0;
 }
 
 .service-section .service-img {
@@ -231,17 +234,16 @@ body::-webkit-scrollbar {
 	z-index: 9;
 }
 
-.service-img,
+/* .service-img,
 .about-img {
 	position: relative;
 	z-index: 12;
-}
-.marketing .service-img {
+} */
+/* .marketing .service-img {
 	position: absolute;
 	top: 0;
 	left: 0;
-	/* height: 100%; */
-}
+} */
 
 .marketing-content {
 	padding: 10rem 0;
