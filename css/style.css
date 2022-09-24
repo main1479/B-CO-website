@@ -407,7 +407,7 @@ select::-ms-expand {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.491);
+	background-color: rgba(0, 0, 0, 0.745);
 	z-index: 15;
 	opacity: 0;
 	transition: all 0.5s;
@@ -438,6 +438,7 @@ select::-ms-expand {
 	padding: 2rem;
 	border-radius: 1rem;
 	position: relative;
+	box-shadow: rgba(94, 94, 94, 0.318) 0px 0px 30px 5px;
 }
 
 .popup h2 {
