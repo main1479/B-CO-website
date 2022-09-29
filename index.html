@@ -17,14 +17,38 @@
 		<link rel="stylesheet" href="css/utilities.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/responsive.css" />
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init('37L73g_FUZAtMymAF');
+			})();
+		</script>
 	</head>
 	<body>
 		<main class="main">
+			<!-- side nav satrt -->
+			<div class="dots-nav">
+				<a href="#header" class="btn-dot active"></a>
+				<a href="#about" class="btn-dot"></a>
+				<a href="#service" class="btn-dot"></a>
+				<a href="#marketing" class="btn-dot"></a>
+				<a href="#tecnology" class="btn-dot"></a>
+				<a href="#strategy" class="btn-dot"></a>
+				<a href="#training" class="btn-dot"></a>
+				<a href="#contact" class="btn-dot"></a>
+			</div>
+			<!-- side nav end -->
+
 			<!-- navbar start -->
 			<nav class="nav d-flex justify-content-between align-items-center">
-				<a href="#" class="nav-logo">
-					<img src="img/logo.png" alt="" />
-				</a>
+				<abbr title="BOTAN & CO">
+					<a href="index.html" class="nav-logo">
+						<img src="img/logo.png" alt="" />
+					</a>
+				</abbr>
 				<ul class="nav-list d-flex justify-content-start align-items-center">
 					<li class="nav-item">
 						<a href="#header" class="nav-link active">home</a>
@@ -42,115 +66,90 @@
 			</nav>
 			<!-- navbar end -->
 
+			<div class="cookie-consent-modal">
+				<div class="content">
+					<h1>Allow Cookies</h1>
+					<p>
+						We use cookies to analyze information about site performance and use, to provide social
+						media features and to customize content and advertising.
+					</p>
+					<div class="btns">
+						<button class="Cbtn cancel">cancel</button>
+						<button class="Cbtn accept">accept</button>
+					</div>
+				</div>
+			</div>
+
 			<!-- header start -->
-			<header class="js-section header" id="header">
+			<header class="js-section header position-relative" id="header">
 				<div class="container h-100">
-					<div class="row h-100 justify-content-center align-items-center" id="home">
-						<div class="col-12 col-lg-6">
-							<div class="content-wrapper h-100">
-								<h3 class="heading mb-2">YOU ARE NOT ALONE...</h3>
-								<h1 class="heading mb-3">WE SOLVE TECHNICAL & BUSINESS CHALLENGES</h1>
-								<button class="btn btn-show-reel d-flex align-items-center">
-									<svg class="icon mr-2">
-										<use xlink:href="img/icons.svg#icon-play_circle_filled"></use>
-									</svg>
-									<span class="text"> show reel </span>
-								</button>
-							</div>
-						</div>
-						<div class="col-12 col-lg-6">
-							<div class="content-wrapper position-relative h-100">
-								<figure class="home-img">
-									<img src="img/home-img.png" alt="WE SOLVE TECHNICAL & BUSINESS CHALLENGES" />
-								</figure>
-							</div>
+					<div class="h-100" id="home">
+						<div
+							class="content-wrapper h-100 d-flex flex-column justify-content-center align-items-start"
+						>
+							<h3 class="heading mb-2 mt-5">YOU ARE NOT ALONE...</h3>
+							<h1 class="heading mb-3 d-none d-lg-block">
+								WE SOLVE TECHNICAL & <br />
+								BUSINESS CHALLENGES
+							</h1>
+							<h1 class="heading mb-3 d-block d-lg-none">
+								WE SOLVE TECHNICAL & BUSINESS CHALLENGES
+							</h1>
+							<button class="btn btn-show-reel d-flex align-items-center mt-3">
+								<svg class="icon mr-2">
+									<use xlink:href="img/icons.svg#icon-play_circle_filled"></use>
+								</svg>
+								<span class="text"> show reel </span>
+							</button>
 						</div>
 					</div>
 				</div>
+
+				<a href="#about" class="scroll-down-btn active">
+					<svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg>
+				</a>
 			</header>
 			<!-- header end -->
 
 			<!-- about start -->
-			<section class="js-section about-section" id="about">
+			<section class="js-section about-section position-relative" id="about">
 				<div class="container">
 					<!-- about content for big devices -->
-					<div class="row justify-content-center align-items-center d-none d-lg-flex" id="about">
-						<div class="col-12 col-lg-6">
-							<div class="content-wrapper">
-								<figure class="about-img">
-									<img src="img/about-img.png" alt="WE SOLVE TECHNICAL & BUSINESS CHALLENGES" />
-								</figure>
-							</div>
-						</div>
+					<div class="d-flex justify-content-center align-items-center">
+						<div class="content-wrapper text-center">
+							<h3 class="heading mb-2">WHO WE ARE</h3>
+							<h2 class="heading mb-3">
+								WE CREATE WORLD CLASS DIGITAL SOLUTION COMMUNINCATION AND BRANDS
+							</h2>
+							<p class="text mb-5 WidthText">
+								AS A DIGITAL AGENCY, WE WORK CLOSELY WITH OUR CLIENTS TO DEFINE, DESIGN, AND DEVELOP
+								TRANSFORMATIVE SOLUTION ACROSS ALL PLATFORMS AND BRAND'S TOUCH POINT.
+							</p>
 
-						<div class="col-12 col-lg-6">
-							<div class="content-wrapper text-end">
-								<h3 class="heading mb-2">WHO WE ARE</h3>
-								<h2 class="heading mb-3">
-									WE CREATE WORLD CLASS DIGITAL SOLUTION COMMUNINCATION AND BRANDS
-								</h2>
-								<p class="text mb-5">
-									AS A DIGITAL AGENCY, WE WORK CLOSELY WITH OUR CLIENTS TO DEFINE, DESIGN, AND
-									DEVELOP TRANSFORMATIVE SOLUTION ACROSS ALL PLATFORMS AND BRAND'S TOUCH POINT.
-								</p>
-
-								<div class="count row justify-content-end">
-									<div class="col-4 text-center">
-										<div class="count-number pb-2">3</div>
-										<div class="count-title">office</div>
-									</div>
-									<div class="col-4 text-center">
-										<div class="count-number pb-2">10+</div>
-										<div class="count-title">years</div>
-									</div>
-									<div class="col-4 text-center">
-										<div class="count-number pb-2">99+</div>
-										<div class="count-title">SOLUTIONS</div>
-									</div>
+							<div class="count row justify-content-center">
+								<div class="col-4 text-center">
+									<div class="count-title text">office</div>
+									<h3 class="heading count-number pb-2">3</h3>
+									<img src="img/abou-ico-1.png" alt="" class="count-icon" />
 								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- about content for small devices -->
-					<div class="row justify-content-center align-items-center d-flex d-lg-none" id="about">
-						<div class="col-12 col-lg-6 mb-5">
-							<div class="content-wrapper text-end">
-								<h3 class="heading mb-2">WHO WE ARE</h3>
-								<h2 class="heading mb-3">
-									WE CREATE WORLD CLASS DIGITAL SOLUTION COMMUNINCATION AND BRANDS
-								</h2>
-								<p class="text mb-5">
-									AS A DIGITAL AGENCY, WE WORK CLOSELY WITH OUR CLIENTS TO DEFINE, DESIGN, AND
-									DEVELOP TRANSFORMATIVE SOLUTION ACROSS ALL PLATFORMS AND BRAND'S TOUCH POINT.
-								</p>
-
-								<div class="count row justify-content-end">
-									<div class="col-4 text-center">
-										<div class="count-number pb-2">3</div>
-										<div class="count-title">office</div>
-									</div>
-									<div class="col-4 text-center">
-										<div class="count-number pb-2">10+</div>
-										<div class="count-title">years</div>
-									</div>
-									<div class="col-4 text-center">
-										<div class="count-number pb-2">99+</div>
-										<div class="count-title">SOLUTIONS</div>
-									</div>
+								<div class="col-4 text-center">
+									<div class="count-title text">years</div>
+									<h3 class="heading count-number pb-2">10+</h3>
+									<img src="img/abou-ico-2.png" alt="" class="count-icon" />
 								</div>
-							</div>
-						</div>
-
-						<div class="col-12 col-lg-6">
-							<div class="content-wrapper">
-								<figure class="home-img">
-									<img src="img/about-img.png" alt="WE SOLVE TECHNICAL & BUSINESS CHALLENGES" />
-								</figure>
+								<div class="col-4 text-center">
+									<div class="count-title text">SOLUTIONS</div>
+									<h3 class="heading count-number pb-2">99+</h3>
+									<img src="img/abou-ico-3.png" alt="" class="count-icon" />
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<a href="#service" class="scroll-down-btn">
+					<svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg>
+				</a>
 			</section>
 			<!-- about end -->
 
@@ -167,22 +166,40 @@
 							</p>
 
 							<h5 class="heading mb-2">Our areas of expertise:</h5>
-							<div class="service-list">
-								<a href="#" class="service-item d-flex justify-content-between align-items-center">
-									<h3 class="heading">DIGITAL MARKETING</h3>
-									<svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg>
+							<div class="service-list Service1Font">
+								<a
+									href="#marketing"
+									class="service-item d-flex justify-content-between align-items-center"
+								>
+									<h5 class="heading">DIGITAL MARKETING</h5>
+									<button class="btn-go">go</button>
+									<!-- <svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg> -->
 								</a>
-								<a href="#" class="service-item d-flex justify-content-between align-items-center">
-									<h3 class="heading">CORPORATE TRAININGS</h3>
-									<svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg>
+								<a
+									href="#tecnology"
+									class="service-item d-flex justify-content-between align-items-center"
+								>
+									<h5 class="heading">TECHNOLOGY SERVICES</h5>
+									<button class="btn-go">go</button>
+									<!-- <svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg> -->
 								</a>
-								<a href="#" class="service-item d-flex justify-content-between align-items-center">
-									<h3 class="heading">STRATEGY</h3>
-									<svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg>
+
+								<a
+									href="#strategy"
+									class="service-item d-flex justify-content-between align-items-center"
+								>
+									<h5 class="heading">STRATEGY</h5>
+									<button class="btn-go">go</button>
+									<!-- <svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg> -->
 								</a>
-								<a href="#" class="service-item d-flex justify-content-between align-items-center">
-									<h3 class="heading">TECHNOLOGY SERVICES</h3>
-									<svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg>
+
+								<a
+									href="#training"
+									class="service-item d-flex justify-content-between align-items-center"
+								>
+									<h5 class="heading">CORPORATE TRAININGS</h5>
+									<button class="btn-go">go</button>
+									<!-- <svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg> -->
 								</a>
 							</div>
 						</div>
@@ -191,53 +208,36 @@
 						</div>
 					</div>
 				</div>
+
+				<a href="#marketing" class="scroll-down-btn MarketingScroll">
+					<svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg>
+				</a>
 			</section>
 			<!-- service end -->
 
 			<!-- digital marketing start -->
-			<section class="js-section marketing-section position-relative" id="marketing">
+			<section
+				class="js-section marketing-section position-relative"
+				data-id="service"
+				id="marketing"
+			>
 				<div class="container">
-					<!-- marketing for big devices -->
-					<div class="marketing d-none d-lg-block">
+					<div class="marketing MarketingWidth">
 						<div class="row justify-content-end align-items-center">
 							<div class="col-12 col-lg-6 service-img">
 								<img src="img/marketing-img.png" alt="" />
 							</div>
-							<div class="col-12 col-lg-6 text-end marketing-content">
+							<div class="col-12 col-lg-6 marketing-content">
 								<h2 class="heading mb-2">DIGITAL MARKETING</h2>
+
 								<p class="text mb-5">
-									Our goal is to establish your brand as unique as possible. You can perceive your
-									business in fresh ways with our guidance.
-									<br /><br />
-									Tell a more compelling brand story by concentrating on your strengths and
-									differentiators. The magic happens somewhere between the appropriate messaging,
-									the appropriate images, and the appropriate Metaverse. Every single time, our
-									creative team will work with you to create that magic.
+									Our digital activation initiatives combine content, engagement, analytics, and
+									refining in the ideal way. We ensure that we are pivoting and optimizing to match
+									your growing goals by using insights, <br /><br />
+									performance, and data. We'll boost your market share and attract more clients to
+									your brand together.
 								</p>
 								<button class="btn btn-marketing">read more</button>
-							</div>
-						</div>
-					</div>
-
-					<!-- marketing for small devices -->
-					<div class="marketing d-block d-lg-none">
-						<div class="row justify-content-end align-items-center">
-							<div class="col-12 col-lg-6 text-end marketing-content">
-								<h2 class="heading mb-2">DIGITAL MARKETING</h2>
-								<p class="text mb-5">
-									Our goal is to establish your brand as unique as possible. You can perceive your
-									business in fresh ways with our guidance.
-									<br /><br />
-									Tell a more compelling brand story by concentrating on your strengths and
-									differentiators. The magic happens somewhere between the appropriate messaging,
-									the appropriate images, and the appropriate Metaverse. Every single time, our
-									creative team will work with you to create that magic.
-								</p>
-								<button class="btn btn-marketing">read more</button>
-							</div>
-
-							<div class="col-12 col-lg-6 service-img">
-								<img src="img/marketing-img.png" alt="" />
 							</div>
 						</div>
 					</div>
@@ -245,83 +245,272 @@
 
 				<!-- popup -->
 				<div class="popup">
-					<div class="popup-content">
-						<button class="btn-close-popup">
+					<div class="popup-content-wrapper">
+						<button class="btn-close-popup btn-times">
 							<svg class="icon"><use xlink:href="img/icons.svg#icon-clear"></use></svg>
 						</button>
-						<h2 class="heading mb-3">DIGITAL MARKETING</h2>
-						<div class="popup-list">
-							<div class="popup-item mb-5">
-								<div class="popup-number">1</div>
-								<div class="details">
-									<h3 class="heading mb-1">UI / UX DESIGN</h3>
-									<p class="text">
-										You must have a solid understanding of your audiences and what drives each of
-										them before you can create a successful digital ecosystem. Our UX team will
-										provide you with insights using a variety of methods, including user research,
-										persona development, customer journeys, and others. Our creative and development
-										teams work closely together to provide aesthetically pleasing and brand-neutral
-										digital experiences.
-									</p>
+						<div class="popup-content">
+							<h3 class="heading mb-3">DIGITAL MARKETING</h3>
+							<div class="popup-list">
+								<div class="popup-item mb-5">
+									<div class="popup-number">1</div>
+									<div class="details">
+										<h5 class="heading mb-1">UI / UX DESIGN</h5>
+										<p class="text mb-1">
+											You must have a solid understanding of your audiences and what drives each of
+											them before you can create a successful digital ecosystem. Our UX team will
+											provide you with insights using a variety of methods, including user research,
+											persona development, customer journeys, and others. Our creative and
+											development teams work closely together to provide aesthetically pleasing and
+											brand-neutral digital experiences.
+										</p>
+
+										<h5 class="heading mb-1">Capabilities</h5>
+										<ul>
+											<li>Wireframes & Prototypes</li>
+											<li>User Testing</li>
+											<li>Web Design</li>
+											<li>ADA Compliance / Accessibility</li>
+										</ul>
+									</div>
 								</div>
-							</div>
-							<div class="popup-item">
-								<div class="popup-number">2</div>
-								<div class="details">
-									<h3 class="heading mb-1">INFORMATION ARCHITECTURE</h3>
-									<p class="text">
-										The arrangement of the elements in a specific context is known as information
-										architecture (IA). Those that interact with organized content benefit from
-										greater clarity and comprehension. so that they can go more swiftly and simply.
-										IA is the cornerstone of a good user experience and a crucial building block for
-										organizing dialogue that can be applied to all of your brand's communications.
-									</p>
+								<div class="popup-item mb-5">
+									<div class="popup-number">2</div>
+									<div class="details">
+										<h5 class="heading mb-1">Information Architecture</h5>
+										<p class="text mb-1">
+											The arrangement of the elements in a specific context is known as information
+											architecture (IA). Those that interact with organized content benefit from
+											greater clarity and comprehension. <br /><br />
+											so that they can go more swiftly and simply. IA is the cornerstone of a good
+											user experience and a crucial building block for organizing dialogue that can
+											be applied to all of your brand's communications.
+										</p>
+
+										<h5 class="heading mb-1">Capabilities</h5>
+										<ul>
+											<li>Taxonomy & Nomenclature</li>
+											<li>Content Mapping</li>
+											<li>Sitemaps & User Flows</li>
+										</ul>
+									</div>
+								</div>
+								<div class="popup-item mb-5">
+									<div class="popup-number">3</div>
+									<div class="details">
+										<h5 class="heading mb-1">Brand & Identity</h5>
+										<p class="text mb-1">
+											Essentially, your brand is more than just a logo. You maintain a website,
+											Facebook, Instagram, and LinkedIn, right? But what unifies your company as a
+											whole? What is its driving force and main objective? How does it move, sound,
+											and speak? What distinguishes you from your rivals and makes you visible in a
+											crowd? <br /><br />
+											By investigating deeply and responding to these difficult questions that will
+											define who you are and what you represent, we assist businesses of all sizes.
+											Your ability to maintain consistency and familiarity with your customers will
+											foster loyalty and foster employee and customer trust in your business.
+										</p>
+
+										<h5 class="heading mb-1">Capabilities</h5>
+										<ul>
+											<li>Logos & Logotypes</li>
+											<li>Visual System Development</li>
+											<li>Documentation & Training</li>
+										</ul>
+									</div>
+								</div>
+								<div class="popup-item mb-5">
+									<div class="popup-number">4</div>
+									<div class="details">
+										<h5 class="heading mb-1">Graphic Design</h5>
+										<p class="text mb-1">
+											Design is thinking big, but stressing over the details. Being a couple of
+											pixels off is the type of thing that keeps us up at night. We’ll make it pop,
+											grab your attention and keep it there. We’ll adapt to your visual style guide
+											and make sure to set our color palettes and use the right font. <br /><br />
+											Craft and making it pixel-perfect are words we live by. It should work on your
+											phone, your desktop and your TV. And the photography needs to all hang
+											together whether it came from Getty, Your Photo Library, or the one that no
+											one likes, but we have to use anyway.
+										</p>
+
+										<h5 class="heading mb-1">Capabilities</h5>
+										<ul>
+											<li>Animation & Illustration</li>
+											<li>Campaign Creative</li>
+											<li>Infographics</li>
+											<li>Motion Graphic</li>
+										</ul>
+									</div>
+								</div>
+								<div class="popup-item mb-5">
+									<div class="popup-number">5</div>
+									<div class="details">
+										<h5 class="heading mb-1">Online Marketing</h5>
+										<p class="text mb-1">
+											We reach your target consumers by combining cuttingedge targeting techniques
+											with attractive creativity, serving them hyper-relevant material that
+											encourages interaction. We create and launch paid advertising strategies that
+											seamlessly combine search, display, social, and video. <br /><br />
+											We begin by creating an investment model that projects all of the important
+											campaign metrics. With the help of this approach, we will create benchmarks
+											for your firm that will improve performance and expand its market. In addition
+											to enabling you to target audience micro-segments, our in-depth market
+											research will provide you with crucial insights and information that you can
+											use to revaluate and change your paid advertising plan as your company
+											expands.
+										</p>
+
+										<h5 class="heading mb-1">Capabilities</h5>
+										<ul>
+											<li>Search Engine Marketing</li>
+											<li>Programmatic Display</li>
+											<li>Facebook Advertising</li>
+											<li>Instagram Advertising</li>
+											<li>LinkedIn Advertising</li>
+											<li>YouTube Advertising</li>
+										</ul>
+									</div>
+								</div>
+								<div class="popup-item mb-5">
+									<div class="popup-number">6</div>
+									<div class="details">
+										<h5 class="heading mb-1">Search Engine Optimization</h5>
+										<p class="text mb-1">
+											Strong Search Engine Optimization (SEO), regardless of the site's
+											architecture, page speed, or content strategy, puts your brand in front of the
+											appropriate audience at the appropriate moment. We ensure that your goods and
+											services appear on search results pages that encourage conversions.
+											<br /><br />
+											With our advanced expertise in tried-and-true strategies like structured data
+											(schema), keyword data analysis, editorial content strategy, and others, we'll
+											oversee the strategic development of the content and functionality of your
+											website to rank higher on search engines and create your SEO machine.
+										</p>
+
+										<h5 class="heading mb-1">Capabilities</h5>
+										<ul>
+											<li>Keyword Analysis</li>
+											<li>Competitive Intelligence</li>
+											<li>Content Marketing</li>
+											<li>Technical SEO</li>
+											<li>International</li>
+											<li>HTML Markup</li>
+											<li>Information Architecture</li>
+										</ul>
+									</div>
+								</div>
+								<div class="popup-item mb-5">
+									<div class="popup-number">7</div>
+									<div class="details">
+										<h5 class="heading mb-1">Social Media</h5>
+										<p class="text mb-1">
+											We design delightful social media experiences that expand your network,
+											increase engagement, and provide results across all platforms, including
+											LinkedIn, Facebook, Pinterest, Instagram, and everything in between. With the
+											use of comprehensive editorial calendars, sponsored campaign management,
+											captivating content, and cutting-edge training, our social tactics are made to
+											ensure that your digital presence can expand along with your company. Every
+											social plan we develop is intended to complement your company's objectives,
+											increase sales, and engage your audience.
+										</p>
+
+										<h5 class="heading mb-1">Capabilities</h5>
+										<ul class="capabilities-list">
+											<li>Influencer Marketing</li>
+											<li>Social Creative Development</li>
+											<li>Content Marketing</li>
+											<li>Editorial Calendar Planning</li>
+										</ul>
+									</div>
+								</div>
+								<div class="popup-item mb-5">
+									<div class="popup-number">8</div>
+									<div class="details">
+										<h5 class="heading mb-1">Analytics & Reporting</h5>
+										<p class="text mb-1">
+											Our reporting is designed to give you the information you need to make the
+											best strategic and tactical decisions for the growth of your company because
+											we think that strong business decisions begin with actionable data. We track
+											our progress using clearly defined KPIs that are particular to each client,
+											and the information we gather helps us refine our strategy, identifies turning
+											points, and provides you with the comprehensive picture you need to make wise,
+											wellinformed decisions. <br /><br />
+											We can assist you in producing the reports and insights that will power your
+											business for years to come by collecting your data from many channels and
+											integrating it into a streamlined dashboard.
+										</p>
+
+										<h5 class="heading mb-1">Capabilities</h5>
+										<ul class="capabilities-list">
+											<li>Dashboard Development</li>
+											<li>Google Tag Management</li>
+											<li>Paid Media Reporting</li>
+											<li>Website Performance</li>
+											<li>Reporting</li>
+											<li>Marketing Automation</li>
+											<li>CRM Suite</li>
+											<li>Integration</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<a href="#tecnology" class="scroll-down-btn TechAreaScroll">
+					<svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg>
+				</a>
 			</section>
 			<!-- digital marketing end -->
 
-			<!-- coporate training start -->
-			<section class="js-section corporate-section position-relative" id="training">
+			<!-- technology start -->
+			<section
+				class="js-section technology-section position-relative"
+				data-id="service"
+				id="tecnology"
+			>
 				<div class="container">
 					<!-- marketing for big devices -->
-					<div class="marketing d-none d-lg-block">
-						<div class="row justify-content-end align-items-center">
-							<div class="col-12 col-lg-6 service-img">
-								<img src="img/training-img.png" alt="" />
-							</div>
-							<div class="col-12 col-lg-6 text-end marketing-content">
-								<h2 class="heading mb-2">CORPORATE TRAININGS</h2>
+					<div class="marketing TechArea">
+						<div class="row justify-content-start align-items-center">
+							<div class="col-12 col-lg-6 marketing-content TechText">
+								<h2 class="heading mb-2">TECHNOLOGY SERVICES</h2>
 								<p class="text mb-5">
-									Our digital activation initiatives combine content, engagement, analytics, and
-									refining in the ideal way. We ensure that we are pivoting and optimizing to match
-									your growing goals by using insights, performance, and data. We'll boost your
-									market share and attract more clients to your brand together.
+									We take a proactive approach to developing and expanding the marketing
+									technologies and platforms that enable business in the modern world. Without a
+									doubt, the influence of technology on societal expectations and corporate strategy
+									is expanding, as are employee and customer expectations for what technological
+									services can offer. We think technology can significantly improve customer
+									service, increase revenue, and simplify all corporate procedures.
 								</p>
 								<button class="btn btn-marketing">read more</button>
+							</div>
+
+							<div class="col-12 col-lg-6 service-img techImg">
+								<img src="img/technology-img.png" alt="" />
 							</div>
 						</div>
 					</div>
 
 					<!-- CORPORATE for small devices -->
-					<div class="marketing d-block d-lg-none">
+					<div class="marketing d-none">
 						<div class="row justify-content-end align-items-center">
 							<div class="col-12 col-lg-6 text-end marketing-content">
-								<h2 class="heading mb-2">CORPORATE TRAININGS</h2>
+								<h2 class="heading mb-2">TECHNOLOGY SERVICES</h2>
 								<p class="text mb-5">
-									Our digital activation initiatives combine content, engagement, analytics, and
-									refining in the ideal way. We ensure that we are pivoting and optimizing to match
-									your growing goals by using insights, performance, and data. We'll boost your
-									market share and attract more clients to your brand together.
+									We take a proactive approach to developing and expanding the marketing
+									technologies and platforms that enable business in the modern world. Without a
+									doubt, the influence of technology on societal expectations and corporate strategy
+									is expanding, as are employee and customer expectations for what technological
+									services can offer.
 								</p>
 								<button class="btn btn-marketing">read more</button>
 							</div>
 
 							<div class="col-12 col-lg-6 service-img">
-								<img src="img/training-img.png" alt="" />
+								<img src="img/technology-img.png" alt="" />
 							</div>
 						</div>
 					</div>
@@ -329,57 +518,134 @@
 
 				<!-- popup -->
 				<div class="popup">
-					<div class="popup-content">
-						<button class="btn-close-popup">
+					<div class="popup-content-wrapper">
+						<button class="btn-close-popup btn-times">
 							<svg class="icon"><use xlink:href="img/icons.svg#icon-clear"></use></svg>
 						</button>
-						<h2 class="heading mb-3">CORPORATE TRAININGS</h2>
-						<div class="popup-list">
-							<div class="popup-item mb-5">
-								<div class="popup-number">1</div>
-								<div class="details">
-									<h3 class="heading mb-1">LEAD NUTURE CAMPAIGNS</h3>
-									<p class="text">
-										The creation of leads draws potential customers to your goods and services,
-										converting them into clients and advocates of your company. We collaborate with
-										you to create a holistic plan that speaks to your audiences and nurtures them
-										during every stage of the customer journey. This strategy will contain the best
-										messaging, targeting, tactics, and experiences. <br /><br />
+						<div class="popup-content">
+							<h2 class="heading mb-3">TECHNOLOGY SERVICES</h2>
+							<div class="popup-list">
+								<div class="popup-item mb-5">
+									<div class="popup-number">1</div>
+									<div class="details">
+										<h5 class="heading mb-1">Marketing & CRM Technology</h5>
+										<p class="text mb-1">
+											Your sales and marketing teams can collect, manage, and utilize prospect and
+											customer data with the help of CRM and marketing automation tools.
+											<br /><br />
+											When integrated and managed effectively, strong platforms such as Adobe,
+											Salesforce and Microsoft Dynamics may assist you in keeping competitive while
+											providing dynamic customer experiences and sales engagements, utilizing rising
+											volumes of customer data, and remaining compliant with changing regulatory
+											environments. <br /><br />
+											But even with all the fantastic technologies available today, you still need a
+											reliable companion to help you along the way. <br /><br />
+											Our range of Salesforce Consulting Services and Microsoft Dynamics Consulting
+											Services, as well as our in-depth familiarity with particular platforms, like
+											Adobe, all contribute to our experience. To actually make these investments
+											impactful for your company, we will also use our expertise in marketing
+											operations, people and change, and operational excellence. <br /><br />
+											We are that partner for you, ensuring that you get the most out of your tools
+											while staying on top of these fast changing technologies.
+										</p>
 
-										We have a variety of methods at our disposal to generate curiosity and ensure
-										that the plan, from SEM to email. We will work together to maximize the outcomes
-										within each of your customer groups in order to increase brand awareness and
-										clientele.
-									</p>
+										<h5 class="heading mb-1">Capabilities</h5>
+										<ul class="capabilities-list">
+											<li>Custom Applications & API Integration</li>
+											<li>Platform implementation and advancement</li>
+											<li>Marketing automation integrations, migrations and consolidations</li>
+											<li>Engineering solutions and data governance and hygiene</li>
+											<li>Customer and Lead Lifecycle Management</li>
+											<li>
+												Campaign management services including: design, execution, monitoring and
+												reporting
+											</li>
+											<li>Advanced analytics</li>
+											<li>Best practices, governance and process development</li>
+											<li>Assessments and training</li>
+											<li>Vision and Strategy Development</li>
+											<li>Implementation Services for Multiple Business Areas</li>
+											<li>Managed Services</li>
+											<li>Custom Development</li>
+											<li>
+												Marketing Automation and CRM integrations, migrations and consolidations
+											</li>
+											<li>Industry specific and proprietary tool integrations</li>
+											<li>Cloud usage for marketing data</li>
+											<li>
+												Engineering solutions, process development and data governance and hygiene
+											</li>
+											<li>
+												Support and advancement of visualization tools (including PowerBI & Tableau)
+											</li>
+										</ul>
+									</div>
 								</div>
-							</div>
-							<div class="popup-item">
-								<div class="popup-number">2</div>
-								<div class="details">
-									<h3 class="heading mb-1">ONLINE MARKETING</h3>
-									<p class="text">
-										We reach your target consumers by combining cutting-edge targeting techniques
-										with attractive creativity, serving them hyper-relevant material that encourages
-										interaction. We create and launch paid advertising strategies that seamlessly
-										combine search, display, social, and video. <br /><br />
+								<div class="popup-item mb-5">
+									<div class="popup-number">2</div>
+									<div class="details">
+										<h5 class="heading mb-1">Front-End Development</h5>
+										<p class="text mb-1">
+											For online applications, front-end development is crucial, and we are skilled
+											in all current methods for writing cuttingedge front-end code. Front end code
+											is the tip of the spear to impress your brand on your customers. From mobile
+											responsive HTML5 that is utilizing sass to scale the site to the latest
+											JavaScript frameworks like React and Angular to support decoupled
+											applications, to the latest high performance animations to bring your brand to
+											life.
+										</p>
 
-										We begin by creating an investment model that projects all of the important
-										campaign metrics. With the help of this approach, we will create benchmarks for
-										your firm that will improve performance and expand its market. In addition to
-										enabling you to target audience micro-segments, our in-depth market research
-										will provide you with crucial insights and information that you can use to
-										revaluate and change your paid advertising plan as your company expands.
-									</p>
+										<h5 class="heading mb-1">Capabilities</h5>
+										<ul class="capabilities-list">
+											<li>HTML5/CSS/Javascript</li>
+											<li>Responsive Frameworks</li>
+											<li>Sass</li>
+											<li>JQuery</li>
+											<li>React</li>
+											<li>Angular</li>
+										</ul>
+									</div>
+								</div>
+								<div class="popup-item mb-5">
+									<div class="popup-number">3</div>
+									<div class="details">
+										<h5 class="heading mb-1">Web Application Development</h5>
+										<p class="text mb-1">
+											We work on creating fully functional web applications and frameworks in
+											addition to content management systems. We are talking about more than just
+											hosting because we have a deep understanding of cloud-based technology. We’re
+											talking about services ranging from Amazon’s Lambda to Azure’s API apps. To
+											connect all of this with other services, it also entails creating,
+											integrating, and growing application programming interfaces (APIs). No matter
+											what, we have you covered.
+										</p>
+
+										<h5 class="heading mb-1">Capabilities</h5>
+										<ul class="capabilities-list">
+											<li>Audits & Evaluations</li>
+											<li>RHosting Platforms</li>
+											<li>Enterprise Clouds (AWS, Azure, Google Cloud)</li>
+											<li>Custom Applications & API Integration</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<a href="#strategy" class="scroll-down-btn strategyScroll">
+					<svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg>
+				</a>
 			</section>
-			<!-- coporate training end -->
+			<!-- technology end -->
 
 			<!-- strategy start -->
-			<section class="js-section strategy-section position-relative" id="strategy">
+			<section
+				class="js-section strategy-section position-relative strategyArea"
+				data-id="service"
+				id="strategy"
+			>
 				<div class="container">
 					<!-- marketing for big devices -->
 					<div class="marketing d-none d-lg-block">
@@ -387,7 +653,7 @@
 							<div class="col-12 col-lg-6 service-img">
 								<img src="img/strategy-img.png" alt="" />
 							</div>
-							<div class="col-12 col-lg-6 text-end marketing-content">
+							<div class="col-12 col-lg-6 marketing-content STRATEGYContent">
 								<h2 class="heading mb-2">STRATEGY</h2>
 								<p class="text mb-5">
 									We conduct the in-depth investigation required to develop a powerful digital
@@ -425,87 +691,141 @@
 
 				<!-- popup -->
 				<div class="popup">
-					<div class="popup-content">
-						<button class="btn-close-popup">
+					<div class="popup-content-wrapper">
+						<button class="btn-close-popup btn-times">
 							<svg class="icon"><use xlink:href="img/icons.svg#icon-clear"></use></svg>
 						</button>
-						<h2 class="heading mb-3">strategy</h2>
-						<div class="popup-list">
-							<div class="popup-item mb-5">
-								<div class="popup-number">1</div>
-								<div class="details">
-									<h3 class="heading mb-1">DESIGN</h3>
-									<p class="text">
-										Your digital marketing plan will get off to a deliberate, data-driven start with
-										the assistance of our, technical, strategic, and UX teams. The process will be
-										supported by primary and secondary research, client workshops, and cooperation.
-										<br /><br />
+						<div class="popup-content">
+							<h2 class="heading mb-3">strategy</h2>
+							<div class="popup-list">
+								<div class="popup-item mb-5">
+									<div class="popup-number">1</div>
+									<div class="details">
+										<h5 class="heading mb-1">Research</h5>
+										<p class="text mb-1">
+											Your digital marketing plan will get off to a deliberate, datadriven start
+											with the assistance of our, technical, strategic, and UX teams. The process
+											will be supported by primary and secondary research, client workshops, and
+											cooperation. <br /><br />
+											We learn more about your brand's identity, your target market, and any current
+											events that might have an impact on customer choices. We develop you an
+											acquisition plan that maximizes lead creation after analyzing your online
+											marketplace, competitors, and digital properties.
+										</p>
 
-										We learn more about your brand's identity, your target market, and any current
-										events that might have an impact on customer choices. We develop you an
-										acquisition plan that maximizes lead creation after analyzing your online
-										marketplace, competitors, and digital properties.
-									</p>
+										<h5 class="heading mb-1">Capabilities</h5>
+										<ul class="capabilities-list">
+											<li>Competitive Analysis</li>
+											<li>Interviews and Focus Groups</li>
+											<li>Quantitative Surveys</li>
+											<li>Secondary Research</li>
+										</ul>
+									</div>
 								</div>
-							</div>
-							<div class="popup-item">
-								<div class="popup-number">2</div>
-								<div class="details">
-									<h3 class="heading mb-1">PERSONAS & JOURNEY</h3>
-									<p class="text">
-										In order to understand your audiences and segment them in intelligent and
-										valuable ways, we will employ this research. Your target audiences' story-based
-										personas will be developed, allowing you to customize your strategy to meet
-										their demands.
-									</p>
+								<div class="popup-item mb-5">
+									<div class="popup-number">2</div>
+									<div class="details">
+										<h5 class="heading mb-1">Personas & Journeys</h5>
+										<p class="text mb-1">
+											In order to understand your audiences and segment them in intelligent and
+											valuable ways, we will employ this research. Your target audiences'
+											story-based personas will be developed, allowing you to customize your
+											strategy to meet their demands. <br /><br />
+											We analyze your target audiences' locations, as well as their objectives, key
+											areas, and content requirements. In order to comprehend each distinct
+											persona's path and the digital touchpoints in their decision-making journey,
+											we will design journey maps for your core audiences.
+										</p>
+
+										<h5 class="heading mb-1">Capabilities</h5>
+										<ul class="capabilities-list">
+											<li>Affinity Mapping</li>
+											<li>Audience Segmentation</li>
+											<li>Consumer Journey Mapping</li>
+											<li>Service Blueprints</li>
+											<li>Persona Development</li>
+										</ul>
+									</div>
+								</div>
+								<div class="popup-item mb-5">
+									<div class="popup-number">3</div>
+									<div class="details">
+										<h5 class="heading mb-1">Brand Strategy</h5>
+										<p class="text mb-1">
+											Consumers in the modern era are more sophisticated than ever. They want value
+											and authenticity instead than being influenced by billboards and TV
+											advertising. And only effective branding can bring about that. <br /><br />
+											In the minds of those you're trying to reach, influence, and convert, your
+											company's brand represents what it stands for. Colors, fonts, logos, photos,
+											and messaging all work together to convey your story and eventually
+											distinguish you from the competition. It's a strategic symphony.
+										</p>
+
+										<h5 class="heading mb-1">Capabilities</h5>
+										<ul class="capabilities-list">
+											<li>Brand Architecture</li>
+											<li>Brand Foundation</li>
+											<li>Brand Messaging & Voice</li>
+											<li>Brand Positioning</li>
+										</ul>
+									</div>
+								</div>
+								<div class="popup-item mb-5">
+									<div class="popup-number">4</div>
+									<div class="details">
+										<h5 class="heading mb-1">Content Strategy</h5>
+										<p class="text mb-1">
+											Planning, creating, promoting, and handling data to draw in new clients and
+											consumers is known as a content strategy. It involves transforming your
+											content from a passive resource to a magnet for new business. <br /><br />
+											We create deliberate methods that appeal to and persuade your target
+											audiences. We'll help you reach the right people at the right time with
+											content that moves them further down your marketing funnel by mapping content
+											to your buyer's journey.
+										</p>
+
+										<h5 class="heading mb-1">Capabilities</h5>
+										<ul class="capabilities-list">
+											<li>Blog Strategy</li>
+											<li>Content Mapping</li>
+											<li>Editorial Calendars</li>
+											<li>Governance</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<a href="#training" class="scroll-down-btn CORPORATEScroll">
+					<svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg>
+				</a>
 			</section>
 			<!-- strategy end -->
 
-			<!-- technology start -->
-			<section class="js-section technology-section position-relative" id="tecnology">
+			<!-- coporate corporate start -->
+			<section
+				class="js-section corporate-section position-relative CORPORATEArea"
+				data-id="service"
+				id="training"
+			>
 				<div class="container">
-					<!-- marketing for big devices -->
-					<div class="marketing d-none d-lg-block">
-						<div class="row justify-content-end align-items-center">
-							<div class="col-12 col-lg-6 service-img">
-								<img src="img/technology-img.png" alt="" />
-							</div>
-							<div class="col-12 col-lg-6 text-end marketing-content">
-								<h2 class="heading mb-2">TECHNOLOGY SERVICES</h2>
+					<div class="marketing">
+						<div class="row justify-content-start align-items-center">
+							<div class="col-12 col-lg-6 marketing-content">
+								<h2 class="heading mb-2">CORPORATE TRAININGS</h2>
 								<p class="text mb-5">
-									We take a proactive approach to developing and expanding the marketing
-									technologies and platforms that enable business in the modern world. Without a
-									doubt, the influence of technology on societal expectations and corporate strategy
-									is expanding, as are employee and customer expectations for what technological
-									services can offer.
-								</p>
-								<button class="btn btn-marketing">read more</button>
-							</div>
-						</div>
-					</div>
-
-					<!-- CORPORATE for small devices -->
-					<div class="marketing d-block d-lg-none">
-						<div class="row justify-content-end align-items-center">
-							<div class="col-12 col-lg-6 text-end marketing-content">
-								<h2 class="heading mb-2">TECHNOLOGY SERVICES</h2>
-								<p class="text mb-5">
-									We take a proactive approach to developing and expanding the marketing
-									technologies and platforms that enable business in the modern world. Without a
-									doubt, the influence of technology on societal expectations and corporate strategy
-									is expanding, as are employee and customer expectations for what technological
-									services can offer.
+									Our digital activation initiatives combine content, engagement, analytics, and
+									refining in the ideal way. We ensure that we are pivoting and optimizing to match
+									your growing goals by using insights, performance, and data. We'll boost your
+									market share and attract more clients to your brand together.
 								</p>
 								<button class="btn btn-marketing">read more</button>
 							</div>
 
 							<div class="col-12 col-lg-6 service-img">
-								<img src="img/technology-img.png" alt="" />
+								<img src="img/training-img.png" alt="" />
 							</div>
 						</div>
 					</div>
@@ -513,103 +833,107 @@
 
 				<!-- popup -->
 				<div class="popup">
-					<div class="popup-content">
-						<button class="btn-close-popup">
+					<div class="popup-content-wrapper">
+						<button class="btn-close-popup btn-times">
 							<svg class="icon"><use xlink:href="img/icons.svg#icon-clear"></use></svg>
 						</button>
-						<h2 class="heading mb-3">TECHNOLOGY SERVICES</h2>
-						<div class="popup-list">
-							<div class="popup-item mb-5">
-								<div class="popup-number">1</div>
-								<div class="details">
-									<h3 class="heading mb-1">MARKETING & CRM TECHNOLOGY</h3>
-									<p class="text">
-										Your sales and marketing teams can collect, manage, and utilize prospect and
-										customer data with the help of CRM and marketing automation tools. <br /><br />
+						<div class="popup-content">
+							<h2 class="heading mb-3">CORPORATE TRAININGS</h2>
+							<div class="popup-list">
+								<div class="popup-item mb-5">
+									<div class="popup-number">1</div>
+									<div class="details">
+										<h3 class="heading mb-1">LEAD NUTURE CAMPAIGNS</h3>
+										<p class="text">
+											The creation of leads draws potential customers to your goods and services,
+											converting them into clients and advocates of your company. We collaborate
+											with you to create a holistic plan that speaks to your audiences and nurtures
+											them during every stage of the customer journey. This strategy will contain
+											the best messaging, targeting, tactics, and experiences. <br /><br />
 
-										When integrated and managed effectively, strong platforms such as Adobe,
-										Salesforce and Microsoft Dynamics may assist you in keeping competitive while
-										providing dynamic customer experiences and sales engagements, utilizing rising
-										volumes of customer data, and remaining compliant with changing regulatory
-										environments. <br /><br />
-
-										But even with all the fantastic technologies available today, you still need a
-										reliable companion to help you along the way. <br /><br />
-
-										Our range of Salesforce Consulting Services and Microsoft Dynamics Consulting
-										Services, as well as our in-depth familiarity with particular platforms, like
-										Adobe, all contribute to our experience. To actually make these investments
-										impactful for your company, we will also use our expertise in marketing
-										operations, people and change, and operational excellence.
-									</p>
+											We have a variety of methods at our disposal to generate curiosity and ensure
+											that the plan, from SEM to email. We will work together to maximize the
+											outcomes within each of your customer groups in order to increase brand
+											awareness and clientele.
+										</p>
+									</div>
 								</div>
-							</div>
-							<div class="popup-item">
-								<div class="popup-number">2</div>
-								<div class="details">
-									<h3 class="heading mb-1">FRONT-END DEVELOPMENT</h3>
-									<p class="text">
-										For online applications, front-end development is crucial, and we are skilled in
-										all current methods for writing cutting-edge front-end code. Front end code is
-										the tip of the spear to impress your brand on your customers. From mobile
-										responsive HTML5 that is utilizing sass to scale the site to the latest
-										JavaScript frameworks like React and Angular to support decoupled applications,
-										to the latest high performance animations to bring your brand to life.
-									</p>
+								<div class="popup-item">
+									<div class="popup-number">2</div>
+									<div class="details">
+										<h3 class="heading mb-1">ONLINE MARKETING</h3>
+										<p class="text">
+											We reach your target consumers by combining cutting-edge targeting techniques
+											with attractive creativity, serving them hyper-relevant material that
+											encourages interaction. We create and launch paid advertising strategies that
+											seamlessly combine search, display, social, and video. <br /><br />
+
+											We begin by creating an investment model that projects all of the important
+											campaign metrics. With the help of this approach, we will create benchmarks
+											for your firm that will improve performance and expand its market. In addition
+											to enabling you to target audience micro-segments, our in-depth market
+											research will provide you with crucial insights and information that you can
+											use to revaluate and change your paid advertising plan as your company
+											expands.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<a href="#contact" class="scroll-down-btn ContactScroll">
+					<svg class="icon"><use xlink:href="img/icons.svg#icon-chevron-down"></use></svg>
+				</a>
 			</section>
-			<!-- technology end -->
+			<!-- coporate corporate end -->
 
 			<!-- contact start -->
 			<section class="js-section contact-section" id="contact">
 				<div class="container">
 					<div class="contact">
-						<div class="contact-header mb-2 d-flex align-items-center justify-content-end">
-							<a href="#" class="btn-follow">follow us</a>
-							<div class="line"></div>
-							<a href="#">
-								<svg class="icon"><use xlink:href="img/icons.svg#icon-youtube-play"></use></svg>
-							</a>
-							<a href="#">
-								<svg class="icon"><use xlink:href="img/icons.svg#icon-linkedin"></use></svg>
-							</a>
-							<a href="#">
-								<svg class="icon"><use xlink:href="img/icons.svg#icon-instagram"></use></svg>
-							</a>
-						</div>
 						<h3 class="heading mb-1 center">reach us</h3>
 						<h2 class="heading mb-4 center">LET'S HAVE A TALK AND SEE WHAT WE CAN DO FOR YOU</h2>
 
-						<form action="#" class="contact-form">
+						<div class="contact-form">
 							<div class="row g-5 mb-5">
 								<div class="col-12 col-lg-6">
 									<div class="cotact-item">
 										<label for="name">HEY, MY NAME IS</label>
-										<input type="text" class="input" id="name" placeholder="type here" />
+										<input
+											type="text"
+											class="input"
+											id="FullName"
+											placeholder="type here"
+											required
+										/>
 									</div>
 								</div>
 								<div class="col-12 col-lg-6">
 									<div class="cotact-item">
-										<label for="name">HEY, MY NAME IS</label>
+										<label>and i'm looking for</label>
 										<div class="select">
-											<select name="format" id="format">
-												<option value="select dropdown" selected>select dropdown</option>
-												<option value="dropdown 1">dropdown 1</option>
-												<option value="dropdown 2">dropdown 2</option>
-												<option value="dropdown 3">dropdown 3</option>
-												<option value="dropdown 4">dropdown 4</option>
+											<select name="format" id="message" required>
+												<option value="select dropdown" selected>select Services</option>
+												<option value="DIGITAL MARKETING">DIGITAL MARKETING</option>
+												<option value="CORPORATE TRAININGS">CORPORATE TRAININGS</option>
+												<option value="STRATEGY">STRATEGY</option>
+												<option value="TECHNOLOGY SERVICES">TECHNOLOGY SERVICES</option>
 											</select>
 										</div>
 									</div>
 								</div>
 								<div class="col-12 col-lg-6">
 									<div class="cotact-item">
-										<label for="email">GET IN TOUCH WITH ME AT</label>
-										<input type="text" placeholder="you email" class="input" id="email" />
+										<label for="email_id">GET IN TOUCH WITH ME AT</label>
+										<input
+											type="email"
+											placeholder="you email"
+											class="input"
+											id="email_id"
+											required
+										/>
 									</div>
 								</div>
 							</div>
@@ -620,6 +944,7 @@
 									type="checkbox"
 									value=""
 									id="flexCheckDefault"
+									required
 								/>
 								<label class="form-check-label" for="flexCheckDefault"
 									>I HERE BY ACCEPT ALL TERMS AND CONDITIONS</label
@@ -627,55 +952,57 @@
 							</div>
 
 							<button
-								type="submit"
 								class="btn-submit d-flex justify-content-between align-items-center"
+								onclick="sendMail()"
 							>
 								<span class="text mr-3">SEND ENQUIRY</span>
 								<svg class="icon icon-play"><use xlink:href="img/icons.svg#icon-play"></use></svg>
 							</button>
-						</form>
+						</div>
 					</div>
 				</div>
 			</section>
 			<!-- contact end -->
 
 			<!-- footer start -->
-			<footer class="footer d-flex justify-content-between align-items-center">
-				<div class="footer-left d-flex align-items-center">
-					<div class="email text">
-						EMAIL: <a href="mailto:info@botanandco.net" class="ml-1">info@botanandco.net</a>
+			<footer class="footer">
+				<div class="footer-content text-center">
+					<h5 class="heading mb-2">contact with</h5>
+					<div class="footer-social mb-3 d-flex justify-content-center align-items-center">
+						<a
+							href="https://www.youtube.com/channel/UCz2tFBId1Sg3o9y2NDgGQZQ/videos"
+							target="_blank"
+						>
+							<svg class="icon"><use xlink:href="img/icons.svg#icon-youtube-play"></use></svg>
+						</a>
+						<a href="https://www.linkedin.com/company/botanco" target="_blank">
+							<svg class="icon"><use xlink:href="img/icons.svg#icon-linkedin"></use></svg>
+						</a>
+						<a href="https://www.instagram.com/botanandco/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+							<svg class="icon"><use xlink:href="img/icons.svg#icon-instagram"></use></svg>
+						</a>
 					</div>
-					|
-					<div class="phone text">
-						PHONE: <a href="tel:+46 72-156 21 57" class="ml-1">+46 72-156 21 57</a>
-					</div>
-					|
-					<div class="loaction text">LOCATION . STOCKHOL - COPENHAGEN- HELSINKI</div>
-				</div>
 
-				<div class="footer-right d-flex align-items-center">
-					<div class="copyright text">COPYRIGHT &copy; 2022 |</div>
-					|
-					<a href="#" class="text">PRIVACY POLICY</a>
-					|
-					<a href="#" class="text">TERMS OF USE</a>
+					<h5 class="heading mb-2 text-center">contact</h5>
+					<div class="footer-contact d-flex flex-column justify-content-center align-items-center">
+						<div class="email text d-flex align-items-center mb-2 text-center">
+							<img src="img/email.png" class="footer-contact-ico" alt="" />
+							<a href="mailto:info@botanandco.net" class="ml-1 text">info@botanandco.net</a>
+						</div>
+						<div class="loaction text d-flex align-items-center text-center">
+							<img src="img/location.png" class="footer-contact-ico" alt="" />
+							<p class="text ml-1">STOCKHOL - COPENHAGEN- HELSINKI</p>
+						</div>
+						<p class="text ml-1 mt-2">©2022 BOTAN &Co Sweden, INC. ALL RIGHTS RESERVED.</p>
+					</div>
 				</div>
 			</footer>
 			<!-- footer end -->
-
-			<!-- side nav satrt -->
-			<div class="dots-nav">
-				<a href="#header" class="btn-dot active" id="home"></a>
-				<a href="#about" class="btn-dot" id="home"></a>
-				<a href="#service" class="btn-dot" id="home"></a>
-				<a href="#marketing" class="btn-dot" id="home"></a>
-				<a href="#training" class="btn-dot" id="home"></a>
-				<a href="#strategy" class="btn-dot" id="home"></a>
-				<a href="#tecnology" class="btn-dot" id="home"></a>
-				<a href="#contact" class="btn-dot" id="home"></a>
-			</div>
-			<!-- side nav end -->
 		</main>
+
+		<!-- cookie-consent-modal -->
+
+		<!-- cookie-consent-modal -->
 
 		<!-- JavaScript Bundle with Popper -->
 		<script

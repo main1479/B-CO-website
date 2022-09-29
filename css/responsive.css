@@ -1,26 +1,21 @@
 /* max width 1,024px */
 @media only screen and (max-width: 64em) {
 	html {
-		font-size: 55%;
+		font-size: 50%;
 	}
 }
 
 /* max width 992px */
 @media only screen and (max-width: 62em) {
-	html {
-		font-size: 52%;
-	}
-
 	.nav {
-		padding-right: 2rem;
+		padding: 0 2rem;
 		width: 100%;
 	}
 
-	.service-img,
-	.marketing .service-img {
+	.marketing-content {
 		position: relative;
-		margin: 0 auto;
-		width: 100%;
+		z-index: 2;
+		text-align: center !important;
 	}
 
 	.service-content {
@@ -32,14 +27,31 @@
 	.strategy-section,
 	.technology-section,
 	.corporate-section {
-		padding: 0rem 0;
+		padding: 10rem 0;
 	}
 
-	.marketing-section,
-	.strategy-section,
-	.technology-section,
-	.corporate-section {
-		/* padding: 30rem 0; */
+	.service-img {
+		opacity: 0.5;
+	}
+
+	h1.heading {
+		font-size: 5.7rem;
+	}
+
+	h2.heading {
+		font-size: 4.6rem;
+	}
+
+	h3.heading {
+		font-size: 3.2rem;
+	}
+
+	h5.heading {
+		font-size: 2.4rem;
+	}
+
+	.text {
+		font-size: 1.6rem;
 	}
 }
 
@@ -54,7 +66,11 @@
 	}
 
 	html {
-		font-size: 45%;
+		font-size: 48%;
+	}
+
+	.nav-logo img {
+		height: 5rem;
 	}
 
 	.dots-nav .btn-dot {
@@ -95,6 +111,26 @@
 	}
 	.cotact-item input {
 		text-align: start;
+	}
+
+	h1.heading {
+		font-size: 4.5rem;
+	}
+
+	h2.heading {
+		font-size: 4rem;
+	}
+
+	h3.heading {
+		font-size: 2.6rem;
+	}
+
+	h5.heading {
+		font-size: 2.2rem;
+	}
+
+	.text {
+		font-size: 1.4rem;
 	}
 }
 

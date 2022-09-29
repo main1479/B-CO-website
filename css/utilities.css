@@ -15,21 +15,21 @@
 /* ====================================== */
 
 h1.heading {
-	font-size: 4.2rem;
+	font-size: 6.7rem;
 	font-weight: 400;
 	color: #fff;
 	font-family: var(--font-primary);
 }
 
 h2.heading {
-	font-size: 3.2rem;
+	font-size: 5rem;
 	font-weight: 400;
 	color: #fff;
 	font-family: var(--font-primary);
 }
 
 h3.heading {
-	font-size: 2.2rem;
+	font-size: 3.6rem;
 	font-weight: 400;
 	color: #fff;
 	font-family: var(--font-primary);
@@ -42,25 +42,26 @@ h4.heading {
 }
 
 h5.heading {
-	font-size: 1.4rem;
-	/* font-family: $font-secondary; */
+	font-size: 2.8rem;
 	font-weight: 400;
-	color: #fff;
-}
-
-h6.heading {
-	font-size: 1.2rem;
-	/* font-family: $font-secondary; */
 	color: #fff;
 }
 
 .text {
-	font-size: 1rem;
+	font-size: 18px;
 	color: #fff;
 	font-family: var(--font-secondary);
 	font-weight: 400;
+	margin-bottom: 0 !important;
 }
-
+.WidthText {
+	width: 83%;
+	margin:auto;
+}
+.w-100 {
+    width: 100%!important;
+	margin-left: -2px;
+}
 /* // Typography utils */
 
 .bold {
